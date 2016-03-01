@@ -1,0 +1,17 @@
+import java.io.*;
+
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String sA = reader.readLine();
+        int a = Integer.parseInt(sA);
+        boolean b = a%2 == 0;
+        if (b && a < 0) System.out.println("отрицательное четное число");
+        if (!b && a < 0) System.out.println("отрицательное нечетное число");
+        if (a == 0) System.out.println("нулевое число");
+        if (b && a > 0) System.out.println("положительное четное число");
+        if (!b && a > 0) System.out.println("положительное нечетное число");
+    }
+}
